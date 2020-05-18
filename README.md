@@ -26,4 +26,6 @@ username = "yourFacebookUsername"  # Enter your facebook username
 password = "yourFacebookPassword" # Enter your facebook password
 ```
 --------------
+Video demo: https://youtu.be/fBs5obOKqfg
+
 Twitter: @ryurina23
