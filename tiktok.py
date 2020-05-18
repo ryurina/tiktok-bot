@@ -1,6 +1,6 @@
 from time import sleep
 from selenium import webdriver
-from getpass import *
+from getpass import getpass
 
 class Bot:
 	def __init__(self, username, password): 
