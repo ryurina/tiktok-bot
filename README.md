@@ -16,7 +16,7 @@ python tiktok.py
 ```
 2 - Enter your username and password then press "Enter"
 
-3- Wait
+3 - Wait and Watch
 --------------
 ### Remarks
 You can change the code with you want not to type your username and password in terminal 
