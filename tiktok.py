@@ -4,7 +4,7 @@ from getpass import *
 
 class Bot:
 	def __init__(self, username, password): 
-		self.browser = webdriver.Chrome(executable_path="C:/Users/SERVEUR/Documents/webdriver/chromedriver.exe")
+		self.browser = webdriver.Chrome(executable_path="chromedriver.exe")
 		self.browser.implicitly_wait(5)
 		self.browser.get('https://www.tiktok.com/login/?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Ftrending%2F%3Flang%3Dfr&lang=fr&enter_method=top_bar')
 		sleep(2)
@@ -12,8 +12,8 @@ class Bot:
 		sleep(2)
 
 		# switch window
-		base_window = self.browser.window_handles[0]
-		self.browser.switch_to_window(self.browser.window_handles[1])
+		root = self.browser.window_handles[0]
+		self.browser.switch_to_window(self.browser.window_handles[1]) # switch to popup facebook login window
 
 		# login with facebook
 		self.browser.find_element_by_xpath('//*[@id="email"]').send_keys(username)
@@ -21,7 +21,7 @@ class Bot:
 		self.browser.find_element_by_xpath('//*[@id="u_0_0"]').click()
 		sleep(10)
 
-		self.browser.switch_to_window(base_window)
+		self.browser.switch_to_window(root) #switch to first window
 
 		for i in range(1, 100):
 			sleep(2)
