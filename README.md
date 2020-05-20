@@ -4,7 +4,7 @@ This is my first attempt to create bot with selenium to auto-follow and auto-lik
 ### Install Selenium
 
 ```
-pip install selenium
+python -m pip install -r requirements.txt
 ```
 Selenium docs : https://selenium-python.readthedocs.io/
 
